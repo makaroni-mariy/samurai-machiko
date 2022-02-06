@@ -1,7 +1,33 @@
 @use "global" as *;
 
 .c-btn {
+  position: relative;
+  display: block;
+  width: rem(360);
   padding: rem(10) rem(40);
-  background-color: black;
-  color: yellow;
+  background-color: $black;
+  color: $white;
+  border: 1px solid $white;
+  text-align: center;
+}
+
+.c-btn::after {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    width: 100%;
+    z-index: -1;
+}
+
+.c-btn:hover {
+  color: $black;
+}
+.c-btn:hover::after {
+  transform: translateX(0);
 }
