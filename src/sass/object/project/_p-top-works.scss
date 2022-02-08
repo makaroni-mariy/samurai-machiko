@@ -3,7 +3,10 @@
 .p-top-works__btn {
   margin: 2rem auto 0;
   width: rem(335);
+  height: rem(50);
+
   @include mq('md') {
     width: rem(360);
+    height: rem(60);
   }
 }

@@ -3,15 +3,15 @@
 .c-btn  {
   display: inline-block;
   width: 100%;
-  padding: rem(14);
-  line-height: 1;
+  // padding: rem(14);
+  line-height: rem(48);
   color: #fff;
   background: $grey;
   font-size: rem(20);
   border: rem(1) solid #fff;
   text-align: center;
   @include mq('md') {
-    padding: rem(19);
+    line-height: rem(58);
     font-size: rem(16);
   }  
 }
