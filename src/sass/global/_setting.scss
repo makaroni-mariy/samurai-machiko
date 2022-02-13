@@ -1,11 +1,11 @@
 @use "sass:math";
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap');
 ////////////////////
 // インナー幅設定
 ////////////////////
 // コンテンツのインナー幅（最も共通の幅が多い部分）
 $l-inner: 1100px;
-// ※キュンパス幅ではなくインナーの幅を指す
+// ※キャンパス幅ではなくインナーの幅を指す
 
 // 余白
 $padding-pc: 25px;
@@ -17,26 +17,46 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$font-sans: "'Noto Sans JP', sans-serif";
+$font-serif: "Noto Serif JP', serif";
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+
+  font-family: $font-sans;
+
 }
 
 // フォントウェイト
 $regular: 300;
 $normal: 400;
+$medium: 500;
 $bold: 700;
+
 
 ////////////////////
 // 色の指定
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
+
+$black: #000;
 $white: #fff;
+$bg:#111;
+$grey:#333;
+$text-color: #fff;
+$red: #FF5757;
+$contact-bg: #3D3D3D;
+$new-label: #FFBA6A;
+$category-label :#FFEA2E;
+$navhover-line :#FFEA2E;
+$required-bg: #FFDCDC;
+$title-en: #F9F871;
+$skew-line: #F9F871;
+// $pagination-current: #F9F871;
+$pagination-current: #fff;
+// $pagination-backcolor: #C4C4C4;
+
 
 
 ////////////////////
