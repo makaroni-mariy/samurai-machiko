@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+  <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_top-header') %>
-
-      <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
-    <%- include('./common/_footer') %>
-
-
-    <% for (var i=0; i < 4; i++) { %>
-      <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %>
-      <% } %>
-
-
-
+    <%- include('./common/_top-header') %> <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %> <%- include('./component/_c-label',{text:'お知らせ'}) %> <%- include('./common/_footer') %> <% for (var i=0; i < 4; i++) { %> <%- include('./component/_c-btn',{text:'これはテストです', link:'#'}) %> <% } %>
   </body>
 </html>
