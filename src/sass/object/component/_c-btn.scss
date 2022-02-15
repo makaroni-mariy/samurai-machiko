@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-btn {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  background: $grey;
+  font-size: rem(20);
+  font-weight: $medium;
+  border: rem(1) solid #fff;
+  text-align: center;
+  line-height: 1;
+  @include mq('md') {
+    font-size: rem(16);
+  }  
+}
+
+//背景グレー・テキスト白ボタン
+.c-btn--grey {
+  @extend .c-btn;
+  background-color: $grey;
+  color: $white;
+}
