@@ -1,5 +1,4 @@
 @use "sass:math";
-
 ////////////////////
 // インナー幅設定
 ////////////////////
@@ -17,8 +16,8 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$font-sans: "'Noto Sans JP', sans-serif";
-$font-serif: "Noto Serif JP', serif";
+$font-sans: 'Noto Sans JP', sans-serif;
+$font-serif: 'Noto Serif JP', serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
