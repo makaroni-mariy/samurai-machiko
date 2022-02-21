@@ -3,15 +3,17 @@
   <%- include('./common/_head') %>
   <body>
     <%- include('./common/_top-header') %>
-    <div>
+    <div class="l-inner">
       <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+      <%- include('./component/_c-label',{text:'お知らせ', section:'news'}) %>
+      <%- include('./component/_c-label',{text:'カテゴリ', section:'blog'}) %>
+      <p>こんにちは</p>
+      こんにちは
+      <%- include('./component/_c-hamburger') %>
+      <%- include('./component/_c-map') %>
+      <%- include('./component/_c-breadcrumb', {pageTitle:'お知らせ'}) %>
+      <%- include('./component/_c-pagination.ejs') %> 
     </div>
-    <%- include('./component/_c-label',{text:'お知らせ', section:'news'}) %>
-    <%- include('./component/_c-label',{text:'カテゴリ', section:'blog'}) %>
-    
-    <%- include('./component/_c-hamburger') %>
-    <%- include('./component/_c-map') %>
-    <%- include('./component/_c-breadcrumb', {pageTitle:'お知らせ'}) %>
 
     <%- include('./common/_footer') %>
 

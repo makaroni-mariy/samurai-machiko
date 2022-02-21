@@ -11,13 +11,12 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-
 ////////////////////cd
 // フォント設定
 ////////////////////
 
-$font-sans: 'Noto Sans JP', sans-serif;
-$font-serif: 'Noto Serif JP', serif;
+$font-sans: "Noto Sans JP", sans-serif;
+$font-serif: "Noto Serif JP", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -30,7 +29,6 @@ $normal: 400;
 $medium: 500;
 $bold: 700;
 
-
 ////////////////////
 // 色の指定
 ////////////////////
@@ -39,22 +37,21 @@ $bold: 700;
 
 $black: #000;
 $white: #fff;
-$bg:#111;
-$grey:#333;
-$text-color: #fff;
-$red: #FF5757;
-$contact-bg: #3D3D3D;
-$new-label: #FFBA6A;
-$category-label :#FFEA2E;
-$navhover-line :#FFEA2E;
-$required-bg: #FFDCDC;
-$title-en: #F9F871;
-$skew-line: #F9F871;
+$bg: #111;
+$grey: #333;
+$text-white: #fff;
+$text-black: #333;
+$red: #ff5757;
+$contact-bg: #3d3d3d;
+$new-label: #ffba6a;
+$category-label: #ffea2e;
+$navhover-line: #ffea2e;
+$required-bg: #ffdcdc;
+$title-en: #f9f871;
+$skew-line: #f9f871;
 // $pagination-current: #F9F871;
 $pagination-current: #fff;
 // $pagination-backcolor: #C4C4C4;
-
-
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -67,7 +64,6 @@ $breakpoints: (
   lg: 1024,
   xl: 1440,
 );
-
 
 //メディアクエリー
 $mediaquerys: (
@@ -89,7 +85,6 @@ $mediaquerys: (
   @return math.div($pixels, 16) * 1rem;
 }
 
-
 ////////////////////
 // 非表示設定
 ////////////////////
@@ -107,4 +102,14 @@ $mediaquerys: (
   @include mq("md") {
     display: none;
   }
+}
+
+////////////////////
+// ホバーopacity設定
+////////////////////
+.u-transparent {
+  transition-duration: 0.3s;
+}
+.u-transparent:hover {
+  opacity: 0.7;
 }
