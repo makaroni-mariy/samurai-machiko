@@ -15,16 +15,19 @@
   }  
 }
 
-//背景グレー・文字白ボタン
-.c-btn--grey {
+
+//背景黒・文字白ボタン
+.c-btn--black{
   @extend .c-btn;
   background-color: $grey;
   color: $white;
 }
 
+
 //背景白・文字黒ボタン
 .c-btn--white {
   @extend .c-btn;
   background-color: $white;
-  color: $black;
+  color: $text-black;
 }
+

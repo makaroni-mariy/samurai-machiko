@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.c-to-top {
+  position: fixed;
+  bottom: rem(41);
+  right: rem(21);
+  z-index: 10;
+  a {
+    display: block;
+    background-color: $white;
+    padding: rem(15.5) rem(9);
+    width: rem(45);
+    height: rem(45);
+  }
+  @include mq('md') {
+    bottom: rem(27);
+    right: rem(32);
+  }
+}

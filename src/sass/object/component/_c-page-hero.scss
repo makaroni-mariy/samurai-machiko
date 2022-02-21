@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.c-page-hero {
+  height: rem(425);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-sans;
+  font-weight: $bold;
+  font-size: rem(30);
+  line-height: 1;
+  letter-spacing: .125em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, .2);
+  }
+  @include mq('md') {
+    height: rem(370);
+    font-size: rem(35);
+  }
+}
+
+.c-page-hero--news {
+  background-image: url();
+  @include mq('md') {
+    background-image: url();
+  }
+}
