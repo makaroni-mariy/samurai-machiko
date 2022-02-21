@@ -3,10 +3,19 @@
   <%- include('./common/_head') %>
   <body>
     <%- include('./common/_top-header') %>
-    <div>
-      <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+    <div class="l-inner">
+      <div>
+        <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
+      </div>
+      <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Content'}) %>
+      <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Works'}) %>
+      <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Content'}) %>
+  
     </div>
+    <%- include('./component/_c-to-top') %>
     <%- include('./common/_footer') %>
+  
+    
 
 
 

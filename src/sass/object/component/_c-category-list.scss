@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.c-category-list {
+  font-family: $font-sans;
+  font-weight: $normal;
+  font-size: rem(16);
+  line-height: 1;
+  letter-spacing: .125em;
+  color: $white;
+  padding: rem(9) rem(11);
+}
+
+.c-category-list:hover {
+  background-color: $white;
+  color: $text-black;
+}
