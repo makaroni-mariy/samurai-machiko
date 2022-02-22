@@ -30,8 +30,8 @@
 }
 
 .c-page-hero--news {
-  background-image: url();
+  background-image: url(../images/common/ph-news-sp.jpg);
   @include mq('md') {
-    background-image: url();
+    background-image: url(../images/common/ph-news-pc.jpg);
   }
 }
