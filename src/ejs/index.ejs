@@ -15,8 +15,8 @@
   
     </div>
     <%- include('./component/_c-to-top') %>
-<%# makaroni %>
-<%- include('./component/_c-label',{text:'お知らせ', section:'news'}) %>
+    <%# makaroni %>
+    <%- include('./component/_c-label',{text:'お知らせ', section:'news'}) %>
       <%- include('./component/_c-label',{text:'カテゴリ', section:'blog'}) %>
       <p>こんにちは</p>
       こんにちは
@@ -24,6 +24,7 @@
       <%- include('./component/_c-map') %>
       <%- include('./component/_c-breadcrumb', {pageTitle:'お知らせ'}) %>
       <%- include('./component/_c-pagination.ejs') %> 
+      <%- include('./component/_c-page-next-prev.ejs') %> 
     </div>
     
     <%- include('./common/_footer') %>
