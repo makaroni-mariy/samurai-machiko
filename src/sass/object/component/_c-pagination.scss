@@ -1,0 +1,42 @@
+@use "global" as *;
+
+.c-pagination {
+  display: flex;
+  align-items: center;
+}
+
+.c-pagination__prev,
+.c-pagination__next {
+  display: block;
+  padding: 0 rem(13);
+  border: 1px solid $white;
+  text-transform: uppercase;
+  transition-duration: 0.6s;
+}
+
+.c-pagination__num-box {
+  display: flex;
+  margin-left: rem(24);
+}
+
+.c-pagination__num {
+  padding: 0 rem(8);
+  border: 1px solid $white;
+  transition-duration: 0.6s;
+}
+
+.c-pagination__num:not(:first-child) {
+  margin-left: rem(16);
+}
+
+.c-pagination__next {
+  margin-left: rem(24);
+}
+
+.c-pagination__num.is-current,
+.c-pagination__prev:hover,
+.c-pagination__next:hover,
+.c-pagination__num:hover {
+  background-color: $white;
+  color: $text-black;
+}
