@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.c-breadcrumb__items {
+  display: flex;
+}
+
+.c-breadcrumb__item {
+  font-size: rem(16);
+}
+
+.c-breadcrumb__item:not(:first-child) {
+  position: relative;
+  margin-left: rem(8);
+  padding-left: rem(16);
+}
+
+.c-breadcrumb__item:not(:first-child)::before {
+  content: ">";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}

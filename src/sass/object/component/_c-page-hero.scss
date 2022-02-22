@@ -5,11 +5,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: $font-sans;
-  font-weight: $bold;
-  font-size: rem(30);
-  line-height: 1;
-  letter-spacing: .125em;
+  h1 {
+    font-family: $font-sans;
+    font-weight: $bold;
+    font-size: rem(30);
+    line-height: 1;
+    letter-spacing: .125em;
+  }
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -33,5 +35,33 @@
   background-image: url(../images/common/ph-news-sp.jpg);
   @include mq('md') {
     background-image: url(../images/common/ph-news-pc.jpg);
+  }
+}
+
+.c-page-hero--content {
+  background-image: url(../images/common/ph-content-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/common/ph-content-pc.jpg);
+  }
+}
+
+.c-page-hero--works {
+  background-image: url(../images/common/ph-works-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/common/ph-works-pc.jpg);
+  }
+}
+
+.c-page-hero--overview {
+  background-image: url(../images/common/ph-overview-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/common/ph-overview-pc.jpg);
+  }
+}
+
+.c-page-hero--contact {
+  background-image: url(../images/common/ph-contact-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/common/ph-contact-pc.jpg);
   }
 }

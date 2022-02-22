@@ -4,6 +4,8 @@
   <body>
     <%- include('./common/_top-header') %>
     <div class="l-inner">
+    
+    <%# appin %>
       <div>
         <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
       </div>
@@ -13,14 +15,17 @@
   
     </div>
     <%- include('./component/_c-to-top') %>
+<%# makaroni %>
+<%- include('./component/_c-label',{text:'お知らせ', section:'news'}) %>
+      <%- include('./component/_c-label',{text:'カテゴリ', section:'blog'}) %>
+      <p>こんにちは</p>
+      こんにちは
+      <%- include('./component/_c-hamburger') %>
+      <%- include('./component/_c-map') %>
+      <%- include('./component/_c-breadcrumb', {pageTitle:'お知らせ'}) %>
+      <%- include('./component/_c-pagination.ejs') %> 
+    </div>
+    <%- include('./component/_page-hero', {page:'overview'}) %>    
     <%- include('./common/_footer') %>
-  
-    
-
-
-
-
-
-
   </body>
 </html>
