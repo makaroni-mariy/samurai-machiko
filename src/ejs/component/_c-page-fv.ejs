@@ -1,0 +1,44 @@
+<%# お知らせページの場合 %>
+<% if( page == 'news' ) { %>
+<div class="c-page-fv c-page-fv--news">
+  <h1>
+   お知らせ
+  </h1>
+</div>
+<%# 事業内容ページの場合 %>
+<% } else if(page == 'content') { %>
+  <div class="c-page-fv c-page-fv--content">
+    <h1>
+     事業内容
+    </h1>
+  </div>
+<%# 制作実績ページの場合 %>
+<% } else if(page == 'works') { %>
+  <div class="c-page-fv c-page-fv--works">
+    <h1>
+     制作実績
+    </h1>
+  </div>
+<%# 企業概要ページの場合 %>
+<% } else if(page == 'overview') { %>
+  <div class="c-page-fv c-page-fv--overview">
+    <h1>
+     企業概要
+    </h1>
+  </div>
+<%# ブログページの場合 %>
+<% } else if(page == 'blog') { %>
+  <div class="c-page-fv c-page-fv--blog">
+    <h1>
+     ブログ
+    </h1>
+  </div>
+<%# コンタクトページの場合 %>
+<% } else if(page == 'contact') { %>
+  <div class="c-page-fv c-page-fv--contact">
+    <h1>
+     コンタクト
+    </h1>
+  </div>
+<% } %>
+
