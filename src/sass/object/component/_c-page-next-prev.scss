@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.c-page-next-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-page-next-prev__item {
+  display: block;
+  width: rem(71);
+  text-align: center;
+  border: 1px solid $white;
+  transition-duration: 0.3s;
+}
+
+.c-page-next-prev__item--en {
+  text-transform: uppercase;
+}
+
+.c-page-next-prev__item:not(:first-child) {
+  margin-left: rem(48);
+}
+
+.c-page-next-prev__item:hover {
+  background-color: $white;
+  color: $text-black;
+}
