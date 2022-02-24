@@ -1,16 +1,23 @@
 @use "global" as *;
 
-.c-category-list {
-  font-family: $font-sans;
-  font-weight: $normal;
+.c-category__lists {
+  display: flex;
+  align-items: center;
+}
+
+.c-category__list {
   font-size: rem(16);
   line-height: 1;
   letter-spacing: .125em;
   color: $white;
   padding: rem(9) rem(11);
+  margin-right: rem(29);
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
-.c-category-list:hover {
+.c-category__list:hover {
   background-color: $white;
   color: $text-black;
 }

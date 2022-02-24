@@ -1,0 +1,60 @@
+@use "global" as *;
+
+.c-page-fv {
+  height: rem(425);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-family: $font-sans;
+    font-weight: $bold;
+    font-size: rem(30);
+    line-height: 1;
+    letter-spacing: .125em;
+  }
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  @include mq('md') {
+    height: rem(370);
+    h1 {
+      font-size: rem(35);
+    }
+  }
+}
+
+.c-page-fv--news {
+  background-image: url(../images/news/page-fv-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/news/page-fv-pc.jpg);
+  }
+}
+
+.c-page-fv--content {
+  background-image: url(../images/content/page-fv-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/content/page-fv-pc.jpg);
+  }
+}
+
+.c-page-fv--works {
+  background-image: url(../images/works/page-fv-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/works/page-fv-pc.jpg);
+  }
+}
+
+.c-page-fv--overview {
+  background-image: url(../images/overview/page-fv-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/overview/page-fv-pc.jpg);
+  }
+}
+
+.c-page-fv--contact {
+  background-image: url(../images/contact/page-fv-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/contact/page-fv-pc.jpg);
+  }
+}

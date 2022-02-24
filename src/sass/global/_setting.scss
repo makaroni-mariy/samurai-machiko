@@ -19,15 +19,14 @@ $font-sans: "Noto Sans JP", sans-serif;
 $font-serif: "Noto Serif JP", serif;
 // ※検証ツールでしっかり反映されているか確認する
 
-body {
-  font-family: $font-sans;
-}
 
 // フォントウェイト
 $regular: 300;
 $normal: 400;
 $medium: 500;
 $bold: 700;
+
+
 
 ////////////////////
 // 色の指定
