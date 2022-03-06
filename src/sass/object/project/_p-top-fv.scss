@@ -1,0 +1,104 @@
+@use "global" as *;
+.p-top-fv {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+
+.p-top-fv .swiper-container {
+  overflow: hidden;
+  height: inherit;
+}
+
+.p-top-fv__title-wrapper {
+  position: absolute;
+  top: 47.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 rem(16);
+  text-align: center;
+  z-index: 999;
+  @include mq("md") {
+    top: 50%;
+  }
+}
+
+.p-top-fv__main-title {
+  font-size: rem(28);
+  font-weight: $bold;
+  line-height: 1em;
+  letter-spacing: rem(0.5);
+  @include mq("md") {
+    font-size: rem(50);
+  }
+}
+
+.p-top-fv__sub-title {
+  margin-top: rem(24);
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1em;
+  letter-spacing: rem(0.5);
+  @include mq("md") {
+    font-size: rem(25);
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.p-top-fv.swiper-container {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+.p-top-fv .swiper-wrapper {
+  width: inherit;
+  height: inherit;
+}
+
+.p-top-fv .swiper-slide {
+  width: inherit;
+  height: inherit;
+}
+
+.p-top-fv .swiper-slide-active .slide-img,
+.p-top-fv .swiper-slide-duplicate-active .slide-img,
+.p-top-fv .swiper-slide-prev .slide-img {
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.p-top-fv .slide-img {
+  width: inherit;
+  height: inherit;
+}
+
+.p-top-fv .slide-img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.p-top-fv .slide-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  opacity: 0.2;
+}

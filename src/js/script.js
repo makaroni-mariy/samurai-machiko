@@ -24,13 +24,28 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ヘッダー
-  $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
+  $(window).on('load',function(){ 
+    var path = location.pathname
+    if (path == "/index.html"){
+      $(window).on('scroll', function () {
+        if ($('.p-top-fv').height() < $(this).scrollTop()) {
+          $('.p-header').css('background', 'rgba(17,17,17,1)');
+        } else {
+          $('.p-header').css('background', 'rgba(17,17,17,0.5)');
+        }
+      });
     } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
+      $(window).on('scroll', function () {
+        if ($('.c-page-fv').height() < $(this).scrollTop()) {
+          $('.p-header').css('background', 'rgba(17,17,17,1)');
+        } else {
+          $('.p-header').css('background', 'rgba(17,17,17,0.5)');
+        }
+      });
     }
+    
   });
+  
 
   // ハンバーガー・spナビメニュー
   $(".js-hamburger").on("click", function () {
@@ -43,6 +58,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $("header").css("background-color", "rgba(17, 17, 17, 1)");
       $(this).addClass("is-open");
     }
+  });
+
+   // top-fvスライダー
+   var swiper1 = new Swiper(".js-top-fv-swiper", {
+    loop: true,
+    effect: "fade",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
 
 
