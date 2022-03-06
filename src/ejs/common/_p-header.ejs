@@ -1,20 +1,20 @@
 <header class="l-header p-header">
     <div class="p-header__inner">
         <!-- logo -->
-        <h1 class="p-header__logo">
-            <%- include('../component/_c-logo.ejs') %> 
-        </h1>
+        <div class="p-header__logo">
+            <%- include('../component/_c-logo') %> 
+        </div>
         <!-- hamburger -->
         <div class="p-header__hamburger u-mobile">
-            <%- include('../component/_c-hamburger.ejs') %> 
+            <%- include('../component/_c-hamburger') %> 
         </div>
         <!-- pc-nav -->
         <div class="p-header__pc-nav u-desktop">
-<%- include('../common/_p-pc-nav.ejs') %> 
+            <%- include('./_p-pc-nav') %> 
         </div>
     </div>
     <!-- sp-nav -->
     <div class="p-header__sp-nav u-mobile js-drawer-menu">
-        <%- include('../common/_sp-nav.ejs') %> 
+        <%- include('./_p-sp-nav') %> 
     </div>
 </header>

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.p-overview-list {
+}
+
+.p-overview-list__item {
+  display: flex;
+  padding: rem(14) 0 rem(19);
+  border-bottom: $white 1px solid;
+  @include mq("md") {
+    padding: rem(30) 0 rem(28);
+  }
+}
+
+.p-overview-list__category {
+  max-width: rem(114);
+  width: 100%;
+  padding-left: rem(5);
+  font-size: rem(13);
+  font-weight: 400;
+  line-height: rem(21);
+  @include mq("md") {
+    max-width: rem(157);
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+}
+
+.p-overview-list__text {
+  width: 100%;
+  font-size: rem(13);
+  font-weight: 400;
+  line-height: rem(21);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+}
