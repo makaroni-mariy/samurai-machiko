@@ -10,6 +10,7 @@
   border: rem(1) solid #fff;
   text-align: center;
   line-height: 1;
+  letter-spacing: rem(2);
   @include mq('md') {
     font-size: rem(16);
   }  
