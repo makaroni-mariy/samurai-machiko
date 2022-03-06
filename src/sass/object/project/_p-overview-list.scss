@@ -10,7 +10,7 @@
 .p-overview-list__item {
   display: flex;
   padding: rem(14) 0 rem(19);
-  border-bottom: #fff 1px solid;
+  border-bottom: $white 1px solid;
   @include mq("md") {
     padding: rem(30) 0 rem(28);
   }
