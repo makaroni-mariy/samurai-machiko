@@ -21,7 +21,6 @@
       <p>こんにちは</p>
       こんにちは
       <%- include('./component/_c-hamburger') %>
-      <%- include('./component/_c-map') %>
       <%- include('./component/_c-breadcrumb', {pageTitle:'お知らせ'}) %>
       <%- include('./component/_c-pagination.ejs') %> 
       <%- include('./component/_c-page-next-prev.ejs') %> 
@@ -29,11 +28,9 @@
     <%- include('./component/_c-page-fv', {page:'overview'}) %> 
     <%- include('./component/_c-category') %>
     <div class="l-inner">
-      <%- include('./project/_p-works-point.ejs') %>
+      <%- include('./project/_p-works-point') %>
     </div>
 
-<%- include('./common/_p-pc-nav') %> 
-<%- include('./project/_p-overview-list') %> 
 
     <%- include('./common/_footer') %>
   </body>

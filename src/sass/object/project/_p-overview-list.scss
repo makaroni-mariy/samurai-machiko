@@ -1,10 +1,6 @@
 @use "global" as *;
 
 .p-overview-list {
-  margin-top: rem(85);
-  @include mq("md") {
-    margin-top: rem(115);
-  }
 }
 
 .p-overview-list__item {

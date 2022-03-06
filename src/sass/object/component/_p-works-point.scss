@@ -17,9 +17,9 @@
   display: inline-block;
   margin-left: rem(24);
   padding: rem(8) rem(24);
-  border: #fff 1px solid;
+  border: $white 1px solid;
   border-radius: rem(32);
-  background-color: #111;
+  background-color: $bg;
   font-size: rem(20);
   font-weight: 400;
 }
@@ -27,7 +27,7 @@
 .p-works-point__text {
   margin-top: rem(-22);
   padding: rem(56) rem(10) rem(33);
-  border: #fff 1px solid;
+  border: $white 1px solid;
   font-size: rem(16);
   line-height: rem(35);
   letter-spacing: rem(0.4);

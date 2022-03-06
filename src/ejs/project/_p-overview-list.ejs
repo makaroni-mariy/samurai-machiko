@@ -13,14 +13,10 @@ const overviewLists=[
 
 
 <div class="p-overview-list">
-    <div class="inner">
-      <div class="p-overview-list__items">
-        <% for (var overviewList of overviewLists) {%> 
-        <dl class="p-overview-list__item">
-          <dt class="p-overview-list__category"><%= overviewList.category %></dt>
-          <dd class="p-overview-list__text"><%= overviewList.text %></dd>
-        </dl>
-        <% } %>
-      </div>
-    </div>
-  </div>
+<% for (var overviewList of overviewLists) {%> 
+<dl class="p-overview-list__item">
+    <dt class="p-overview-list__category"><%= overviewList.category %></dt>
+    <dd class="p-overview-list__text"><%= overviewList.text %></dd>
+</dl>
+<% } %>
+</div>
