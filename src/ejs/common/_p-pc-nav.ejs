@@ -1,11 +1,18 @@
+<% 
+const pcNavLists=[
+    { a:"news.html", text:"お知らせ" },
+    { a:"content.html", text:"事業内容" },
+    { a:"works.html", text:"制作実績" },
+    { a:"overview.html", text:"企業概要" },
+    { a:"blog.html", text:"ブログ" },
+] %> 
+
+
 <nav class="p-pc-nav">
     <ul class="p-pc-nav__items">
-        <li class="p-pc-nav__item"><a href="news.html">お知らせ</a></li>
-        <li class="p-pc-nav__item"><a href="content.html">事業内容</a></li>
-        <li class="p-pc-nav__item"><a href="works.html">制作実績</a></li>
-        <li class="p-pc-nav__item"><a href="overview.html">企業概要</a></li>
-        <li class="p-pc-nav__item"><a href="blog.html">ブログ</a></li>
+        <% for (var pcNavList of pcNavLists) {%> 
+        <li class="p-pc-nav__item"><a href="<%= pcNavList.a %>"><%= pcNavList.text %></a></li>
+        <% } %> 
         <li class="p-pc-nav__item p-pc-nav__item--white"><a href="contact.html">お問合せ</a></li>
-
     </ul>
 </nav>

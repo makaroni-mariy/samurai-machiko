@@ -2,7 +2,7 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_header') %>
+    <%- include('./common/_p-header') %>
     <div class="l-inner">
     
     <%# appin %>
@@ -29,7 +29,8 @@
     <%- include('./component/_c-page-fv', {page:'overview'}) %> 
     <%- include('./component/_c-category') %>
 
-<%- include('./common/_p-pc-nav.ejs') %> 
+<%- include('./common/_p-pc-nav') %> 
+<%- include('./project/_p-overview-list') %> 
 
     <%- include('./common/_footer') %>
   </body>
