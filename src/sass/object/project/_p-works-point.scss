@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.p-works-point__box {
+  margin-top: rem(32);
+  @include mq("md") {
+    margin-top: rem(48);
+  }
+}
+
+.p-works-point__box:first-child {
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.p-works-point__title {
+  display: inline-block;
+  margin-left: rem(24);
+  padding: rem(8) rem(24);
+  border: $white 1px solid;
+  border-radius: rem(32);
+  background-color: $bg;
+  font-size: rem(20);
+  font-weight: 400;
+}
+
+.p-works-point__text {
+  margin-top: rem(-22);
+  padding: rem(56) rem(10) rem(33);
+  border: $white 1px solid;
+  font-size: rem(16);
+  line-height: rem(35);
+  letter-spacing: rem(0.4);
+  @include mq("md") {
+    padding: rem(44) rem(22) rem(32);
+  }
+}

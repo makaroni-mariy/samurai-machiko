@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.p-pc-nav {
+  width: 100%;
+  height: inherit;
+}
+
+.p-pc-nav__items {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.p-pc-nav__item {
+  height: inherit;
+}
+
+.p-pc-nav__item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  padding: 0 rem(19);
+  color: $text-white;
+  position: relative;
+}
+
+.p-pc-nav__item a::after {
+  position: absolute;
+  bottom: rem(8);
+  left: 50%;
+  content: "";
+  width: 0;
+  height: rem(1);
+  background: #ffea2e;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.p-pc-nav__item a:hover::after {
+  width: 70%;
+}
+
+.p-pc-nav__item.p-pc-nav__item--white a:hover::after {
+  width: 0;
+}
+
+.p-pc-nav__item.p-pc-nav__item--white {
+  margin-left: rem(16);
+}
+.p-pc-nav__item.p-pc-nav__item--white a {
+  background-color: $white;
+  letter-spacing: rem(1.5);
+  color: #333;
+  padding: 0 rem(32);
+  transition: all 0.5s ease;
+}
+
+.p-pc-nav__item.p-pc-nav__item--white a:hover {
+  background-color: #333;
+  color: #fff;
+}

@@ -1,0 +1,7 @@
+@use "global" as *;
+.l-map {
+  margin-top: rem(120);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}

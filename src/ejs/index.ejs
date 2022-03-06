@@ -2,32 +2,17 @@
 <html lang="ja">
   <%- include('./common/_head') %>
   <body>
-    <%- include('./common/_top-header') %>
-    <div class="l-inner">
-    
-    <%# appin %>
-      <div>
-        <%- include('./component/_c-btn',{text:'詳しく見る', link:'#'}) %>
-      </div>
-      <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Content'}) %>
-      <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Works'}) %>
-      <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Content'}) %>
-      <%- include('./project/_p-blog-card') %>
-    </div>
-    <%- include('./component/_c-to-top') %>
-    <%# makaroni %>
-    <%- include('./component/_c-label',{text:'お知らせ', section:'news'}) %>
-      <%- include('./component/_c-label',{text:'カテゴリ', section:'blog'}) %>
-      <p>こんにちは</p>
-      こんにちは
-      <%- include('./component/_c-hamburger') %>
-      <%- include('./component/_c-map') %>
-      <%- include('./component/_c-breadcrumb', {pageTitle:'お知らせ'}) %>
-      <%- include('./component/_c-pagination.ejs') %> 
-      <%- include('./component/_c-page-next-prev.ejs') %> 
-    </div>
-    <%- include('./component/_c-page-fv', {page:'overview'}) %> 
-    <%- include('./component/_c-category') %>  
+
+    <%- include('./common/_p-header') %>
+    <main>
+      <!-- top fv -->
+      <%- include('./project/_p-top-fv') %>
+
+
+
+      
+    </main>
+
     <%- include('./common/_footer') %>
     
   </body>

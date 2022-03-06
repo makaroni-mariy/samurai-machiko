@@ -1,0 +1,19 @@
+<% 
+const spNavLists=[
+    { a:"news.html", text:"お知らせ" },
+    { a:"content.html", text:"事業内容" },
+    { a:"works.html", text:"制作実績" },
+    { a:"overview.html", text:"企業概要" },
+    { a:"blog.html", text:"ブログ" },
+] %> 
+
+
+
+<nav class="p-sp-nav">
+    <ul class="p-sp-nav__items">
+      <% for (var spNavList of spNavLists) {%> 
+        <li class="p-sp-nav__item"><a href="<%= spNavList.a %>"><%= spNavList.text %></a></li>
+        <% } %> 
+      <li class="p-sp-nav__item"><a href="contact.php">お問い合わせ</a></li>
+    </ul>
+  </nav>

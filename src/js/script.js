@@ -24,19 +24,52 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ヘッダー
-  $(window).on('scroll', function () {
-    if ($('.slider1').height() < $(this).scrollTop()) {
-      $('.header').css('background', 'rgba(17,17,17,1)');
+  $(window).on('load',function(){ 
+    var path = location.pathname
+    if (path == "/index.html"){
+      $(window).on('scroll', function () {
+        if ($('.p-top-fv').height() < $(this).scrollTop()) {
+          $('.p-header').css('background', 'rgba(17,17,17,1)');
+        } else {
+          $('.p-header').css('background', 'rgba(17,17,17,0.5)');
+        }
+      });
     } else {
-      $('.header').css('background', 'rgba(17,17,17,0.5)');
+      $(window).on('scroll', function () {
+        if ($('.c-page-fv').height() < $(this).scrollTop()) {
+          $('.p-header').css('background', 'rgba(17,17,17,1)');
+        } else {
+          $('.p-header').css('background', 'rgba(17,17,17,0.5)');
+        }
+      });
+    }
+    
+  });
+  
+
+  // ハンバーガー・spナビメニュー
+  $(".js-hamburger").on("click", function () {
+    if ($(".js-hamburger").hasClass("is-open")) {
+      $(".js-drawer-menu").fadeOut();
+      $("header").css("background-color", "rgba(17, 17, 17, 0.5)");
+      $(this).removeClass("is-open");
+    } else {
+      $(".js-drawer-menu").fadeIn();
+      $("header").css("background-color", "rgba(17, 17, 17, 1)");
+      $(this).addClass("is-open");
     }
   });
 
-  //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
+   // top-fvスライダー
+   var swiper1 = new Swiper(".js-top-fv-swiper", {
+    loop: true,
+    effect: "fade",
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
   });
+
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
