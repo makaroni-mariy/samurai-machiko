@@ -52,6 +52,13 @@
   }
 }
 
+.c-page-fv--blog {
+  background-image: url(../images/blog/page-fv-sp.jpg);
+  @include mq('md') {
+    background-image: url(../images/blog/page-fv-pc.jpg);
+  }
+}
+
 .c-page-fv--contact {
   background-image: url(../images/contact/page-fv-sp.jpg);
   @include mq('md') {
