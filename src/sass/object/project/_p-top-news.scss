@@ -1,0 +1,25 @@
+.p-top-news {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-news__info {
+  display: flex;
+  width: rem(288);
+}
+
+.p-news__time {
+  margin-right: rem(29);
+  @include mq('md') {
+    margin-right: rem(48);
+  }
+}
+
+.p-top-news__btn {
+  width: rem(335);
+  height: rem(50);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
