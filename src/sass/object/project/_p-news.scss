@@ -1,5 +1,30 @@
+@use "global" as *;
+
 .p-news {
+  @include mq('md') {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.p-news__info {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: rem(288);
+}
+
+.p-news__time {
+  margin-right: rem(29);
+  @include mq('md') {
+    margin-right: rem(48);
+  }
+}
+
+.p-news__title {
+  font-size: rem(16);
+  line-height: 1.4481;
+  margin-top: rem(16);
+  @include mq('md') {
+    margin-top: 0;
+  }
 }

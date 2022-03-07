@@ -1,25 +1,22 @@
+@use "global" as *;
+
 .p-top-news {
-  display: flex;
-  justify-content: space-between;
-}
-
-.p-news__info {
-  display: flex;
-  width: rem(288);
-}
-
-.p-news__time {
-  margin-right: rem(29);
+  margin: 0 auto;
   @include mq('md') {
-    margin-right: rem(48);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
+
 .p-top-news__btn {
+  margin: rem(28) auto 0;
   width: rem(335);
   height: rem(50);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include mq('md') {
+    width: rem(134);
+    height: rem(30);
+    margin-top: 0;
+  }
 }
