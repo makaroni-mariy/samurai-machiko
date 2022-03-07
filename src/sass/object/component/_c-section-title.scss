@@ -46,3 +46,9 @@
     right: rem(-103);
   }
 }
+
+.c-section-title__en--contact {
+  @include mq('md') {
+    bottom: rem(-8);
+  }
+}
