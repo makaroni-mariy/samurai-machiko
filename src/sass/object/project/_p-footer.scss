@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.footer_inner {
+  padding: 0 rem(32);
+}
+
+.p-footer-nav__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq('md') {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+}
+
+.p-footer__logo {
+  width: rem(70);
+}
+
+
+.footer__copyright {
+  margin-top: rem(22);
+  padding-left: 1px;
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(65);
+  }
+}

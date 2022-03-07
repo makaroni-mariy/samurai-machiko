@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.p-footer-nav__items {
+  @include mq('md') {
+    display: flex;
+    justify-content: space-between;
+
+  }
+}
+
+.p-footer-nav__item {
+  a {
+    font-size: rem(16);
+    line-height: rem(23);
+    letter-spacing: rem(1.2);
+  }
+  
+  @include mq('md') {
+    a {
+      line-height: rem(35);
+      letter-spacing: rem(2);
+      padding: 0 rem(16);
+    }
+    &:last-child {
+      a {
+        padding-right: 0;
+      }
+    }
+  }
+}

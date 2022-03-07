@@ -1,0 +1,19 @@
+<% 
+const footerNavLists=[
+  { a:"news.html", text:"お知らせ" },
+  { a:"content.html", text:"事業内容" },
+  { a:"works.html", text:"制作実績" },
+  { a:"overview.html", text:"企業概要" },
+  { a:"blog.html", text:"ブログ" },
+] %> 
+
+
+
+<nav class="p-footer-nav">
+    <ul class="p-footer-nav__items">
+        <% for (var footerNavList of footerNavLists) {%> 
+        <li class="p-footer-nav__item"><a href="<%= footerNavList.a %>"><%= footerNavList.text %></a></li>
+        <% } %> 
+        <li class="p-footer-nav__item p-footer-nav__item--white"><a href="contact.html">お問合せ</a></li>
+    </ul>
+</nav>
