@@ -9,14 +9,29 @@
       <%- include('./project/_p-top-fv') %>
       <div class="l-inner">
         <!-- news -->
-        <%- include('./project/_p-top-news') %>
+        <div class="l-top-news">
+          <%- include('./project/_p-top-news') %>
+        </div>
+        <!-- content -->
+        <div class="l-top-content">
+        <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Content'}) %>
+        </div>
+        <!-- works -->
+        <div class="l-top-works">
+          <%- include('./component/_c-section-title',{japaneseTitle:'制作実績',englishTitle:'Works'}) %>
+        </div>
         <!-- overview -->
-        <%- include('./project/_p-top-overview') %>
-        <!-- <%- include('./component/_c-section-title',{japaneseTitle:'事業内容',englishTitle:'Content'}) %>
-        <%- include('./component/_c-section-title',{japaneseTitle:'制作実績',englishTitle:'Works'}) %>
-        <%- include('./component/_c-section-title',{japaneseTitle:'企業概要',englishTitle:'Overview'}) %>
-        <%- include('./component/_c-section-title',{japaneseTitle:'ブログ',englishTitle:'Blog'}) %>
-        <%- include('./component/_c-section-title',{japaneseTitle:'お問い合わせ',englishTitle:'Contact'}) %> -->
+        <div class="l-top-overview">
+          <%- include('./project/_p-top-overview') %>
+        </div>
+        <!-- blog -->
+        <div class="l-top-blog">
+          <%- include('./component/_c-section-title',{japaneseTitle:'ブログ',englishTitle:'Blog'}) %>
+        </div>
+        <!-- contact -->
+        <div class="l-contact">
+          <%- include('./component/_c-section-title',{japaneseTitle:'お問い合わせ',englishTitle:'Contact'}) %>
+        </div>
       </div>
     </main>
 
